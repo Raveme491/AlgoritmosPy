@@ -2,9 +2,9 @@ import time
 
 
 def temporizador(func):
-    def inner(vetor, number):
+    def inner(*args, **kwargs):
         start = time.time()
-        result = func(vetor, number)
+        result = func(*args, *kwargs)
         print(f'Tempo de Execução: {time.time()-start}')
         return result
     return inner

@@ -5,7 +5,6 @@ from random import randint
 
 from temporizador import temporizador
 
-# start = time.time()
 a = sorted(array('i', [randint(0, 100) for _ in range(100)]))
 
 @temporizador

@@ -1,4 +1,3 @@
-import time
 from array import array
 from math import floor
 from random import randint
@@ -25,6 +24,7 @@ def BinarySearch(vetor: array, number: int) -> int:
             break
         middle = floor((left+right)/2)
     raise Exception("Não existe esse valor na lista")
+
 
 resultado = BinarySearch(a, 99999)
 print(f"A posição é {resultado}")
